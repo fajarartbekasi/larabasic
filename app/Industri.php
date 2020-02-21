@@ -9,4 +9,9 @@ class Industri extends Model
     protected $table = 'industris';
 
     protected $guarded = [];
+
+    public function pengajuans()
+    {
+        return $this->hasMany('App\Pengajuan');
+    }
 }

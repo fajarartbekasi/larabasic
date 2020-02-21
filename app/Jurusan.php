@@ -10,4 +10,9 @@ class Jurusan extends Model
 
     protected $guarded = [];
 
+    public function pengajuans()
+    {
+        return $this->hasMany('App\Pengajuan');
+    }
+
 }
