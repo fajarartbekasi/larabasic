@@ -66,9 +66,7 @@
                             <table class="table table-striped">
                                 <thead>
                                     <tr>
-                                        <th>No</th>
                                         <th>Nama</th>
-                                        <th>NIS</th>
                                         <th>L/P</th>
                                         <th>Tkt/Kelas</th>
                                         <th>Jurusan / Keahlian</th>
@@ -76,33 +74,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+
                                     <tr>
-                                        <td>1</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
+                                        <td>{{$pengajuan->nama}}</td>
+                                        <td>{{$pengajuan->jenis_kelamin}}</td>
+                                        <td>{{$pengajuan->jurusan->nama_kelas}}</td>
+                                        <td>{{$pengajuan->jurusan->nama_jurusan}}</td>
+                                        <td>{{$pengajuan->alamat}}</td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
+
                                 </tbody>
                             </table>
                             <h5 class="text-muted">

@@ -49,9 +49,11 @@ class PklController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show()
+    public function show($id)
     {
-        return view('content.master.pkl.show');
+        $pengajuan = Pengajuan::with('industri', 'jurusan')->find($id);
+
+        return view('content.master.pkl.show',compact('pengajuan'));
     }
 
     /**

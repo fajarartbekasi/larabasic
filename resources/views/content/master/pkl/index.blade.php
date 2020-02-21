@@ -29,7 +29,7 @@
                                                   method="post">
                                                 @csrf
                                                 @method('DELETE')
-                                                <a href="{{route('master.tampilkan.detail.permohonan.pkl-psg')}}"
+                                                <a href="{{route('master.tampilkan.detail.permohonan.pkl-psg', $pengajuan->id)}}"
                                                    class="btn btn-outline-info btn-sm">
                                                    Detail Pengajuan
                                                 </a>

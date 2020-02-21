@@ -32,7 +32,7 @@ Route::group(['prefix' => 'master'], function(){
 
     // master pkl
     route::get('pkl','Master\PklController@index')->name('master.pkl');
-    route::get('tampilkan/detail/permohonan/pkl-psg', 'Master\PklController@show')->name('master.tampilkan.detail.permohonan.pkl-psg');
+    route::get('tampilkan/detail/permohonan/pkl-psg/{pengajuan}', 'Master\PklController@show')->name('master.tampilkan.detail.permohonan.pkl-psg');
 
     // master nilai
     route::get('nilai','Master\NilaiController@index')->name('master.nilai');
