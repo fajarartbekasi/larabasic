@@ -33,7 +33,24 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-
+                        <li class="nav-item">
+                            <a href="{{route('master.jurusan-kelas')}}" class="nav-link">Master Jurusan dan Kelas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.industri')}}" class="nav-link">Master Industri</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.nilai')}}" class="nav-link">Master Nilai Praktek</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.monitoring')}}" class="nav-link">Master Monitoring</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('master.jurusan-kelas')}}" class="nav-link">Master Agenda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('siswa.ambil.form-register.psg')}}" class="nav-link">Form Pengajuan PSG</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
