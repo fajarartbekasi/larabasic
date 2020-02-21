@@ -12,7 +12,6 @@
                         <table class="table table-striped">
                             <thead>
                                 <tr>
-                                    <th>NIS</th>
                                     <th>Nama Siswa</th>
                                     <th>Program / Keahlian</th>
                                     <th>Nama PT</th>
@@ -20,12 +19,11 @@
                                 </tr>
                             </thead>
                             <tbody>
-
+                                @forelse($pengajuanpsg as $pengajuan)
                                     <tr>
-                                        <td>3213213132</td>
-                                        <td>Siska Aulia</td>
-                                        <td>Perhotelan</td>
-                                        <td>PT.Sahabat Menghilang</td>
+                                        <td>{{$pengajuan->nama}}</td>
+                                        <td>{{$pengajuan->jurusan->nama_kelas}} - {{$pengajuan->jurusan->nama_jurusan}}</td>
+                                        <td>{{$pengajuan->industri->nama_industri}}</td>
                                         <td>
                                             <form action=""
                                                   method="post">
@@ -39,6 +37,10 @@
                                             </form>
                                         </td>
                                     </tr>
+                                @empty
+
+
+                                @endforelse
 
                             </tbody>
                         </table>

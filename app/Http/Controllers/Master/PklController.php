@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Master;
 
+use App\Pengajuan;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -14,7 +15,11 @@ class PklController extends Controller
      */
     public function index()
     {
-        return view('content.master.pkl.index');
+        $pengajuanpsg = Pengajuan::with('jurusan','industri')
+                        ->where('status','pengajuan psg')
+                        ->paginate(5);
+
+        return view('content.master.pkl.index', compact('pengajuanpsg'));
     }
 
     /**
